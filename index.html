@@ -8,25 +8,35 @@
   </head>
   <body>
     <header>
-      <section class="search">
+      <div class="search">
         <form action="#" method="GET" class="search-form">
-          <button type="submit" class="search-button">🔍</button>
+          <button type="submit" class="search-button"><img src="./assets/icons/search-icon.svg" alt="search-button"></button>
           <input
             type="search"
             name="q"
-            placeholder="Buscar..."
             class="search-input"
           />
         </form>
-      </section>
-      <section class="functionality">
+        <div class="notification">
+          <img src="./assets/icons/notifications-icon.svg" alt="notifications">
+          <img class="user-photo" src="./assets/photos/perfil1.png" alt="user photo">
+          <p class="user-name">Morgan Oakley</p>
+        </div>
+      </div>
+ 
+      <div class="functionality">
+        <img class="user-photo" src="./assets/photos/perfil1.png" alt="user photo">
         <p>Hi There</p>
         <p>Morgan Oakley (@morgan)</p>
 
-        <button>New</button>
-        <button>Upload</button>
-        <button>Share</button>
-      </section>
+        <div class="buttons">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+
+
     </header>
     <aside>
       <h1>
@@ -196,42 +206,63 @@
       </section>
       <section class="section-announcements">
         <p class="section-header">Announcements</p>
-        <div class="item-announc">
-          <p>Site Maintenance</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            molestias!
-          </p>
-        </div>
-
-        <div class="item-announc">
-          <p>Site Maintenance</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            molestias!
-          </p>
-        </div>
-        <div class="item-announc">
-          <p>Site Maintenance</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
-            molestias!
-          </p>
-        </div>
+        <section class="announcements">
+          <div class="item-announc">
+            <p class="item-title">Site Maintenance</p>
+            <p class="item-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+              molestias!
+            </p>
+          </div>
+          <div class="item-announc">
+            <p class="item-title">Site Maintenance</p>
+            <p class="item-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+              molestias!
+            </p>
+          </div>
+          <div class="item-announc">
+            <p class="item-title">Site Maintenance</p>
+            <p class="item-content">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis,
+              molestias!
+            </p>
+          </div>
+         
+        </section>
       </section>
       <section class="section-trending">
         <p class="section-header">Trending</p>
-        <div class="item-trend">
-          <p>@tegan</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="item-trend">
-          <p>@tegan</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="item-trend">
-          <p>@tegan</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <div class="trending">
+          <div class="item-trend">
+            <img src="./assets/photos/perfil2.png" alt="perfil 1">
+            <div class="trend-user-info">
+              <p class="item-title">@tegan</p>
+              <p class="item-content">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="item-trend">
+            <img src="./assets/photos/perfil3.png" alt="perfil 1">
+            <div class="trend-user-info">
+              <p class="item-title">@morgan</p>
+              <p class="item-content">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="item-trend">
+            <img src="./assets/photos/perfil4.png" alt="perfil 1">
+            <div class="trend-user-info">
+              <p class="item-title">@kendall</p>
+              <p class="item-content">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          <div class="item-trend">
+            <img src="./assets/photos/perfil5.jpg" alt="perfil 1">
+            <div class="trend-user-info">
+              <p class="item-title">@alex</p>
+              <p class="item-content">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+          
         </div>
       </section>
     </main>
