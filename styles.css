@@ -8,6 +8,7 @@
 }
 :root {
   --primary: #06b6d4;
+  --hover: #0e7490;
   --secondary: #efb428;
   --background: #e1e9f0;
   --white: #fff;
@@ -38,7 +39,40 @@ aside {
   grid-column: 1/2;
   grid-row: 1/-1;
   background-color: var(--primary);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
 }
+.dashboard-title{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.dashboard-title > img{
+  width: 40px;
+}
+
+li a {
+  font-weight: bold;
+  color: var(--white);
+  display: flex; 
+  gap: 1rem;
+  align-items: center;
+}
+.dash-functionalities, .dash-extras{
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+a:hover{
+  background-color: var(--hover);
+  border-radius: 10px;
+}
+
+
+
 
 header {
   grid-column: 2/3;
@@ -47,6 +81,7 @@ header {
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .search{
   display: flex;
@@ -55,12 +90,16 @@ header {
 }
 .search-form{
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
+}
+.search-button > img{
+  width: 90%;
+  height: auto;
 }
 .search > form > .search-button{
   border: none; 
   background-color: var(--white); 
-
   border-radius: 10px; 
 }
 
@@ -68,14 +107,13 @@ header {
   background-color: var(--background); 
   border: none; 
   border-radius: 10px; 
-  width: 25rem;
-  height: 1.2rem;
+  width: 30rem;
+  height: 1.5rem;
 }
-
-
-
 .notification{
   display: flex;
+  gap: 1rem;
+  align-items: center;
   flex-direction: row;
 }
 .notification > .user-photo{
@@ -83,13 +121,49 @@ header {
   height: 30px;
 }
 .user-photo{
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 .user-name {
   font-weight: bold;
 }
 
+
+.functionality{
+  display: flex;
+  justify-content: space-between;
+  justify-items: center;
+}
+
+.user-data{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+.user-data > .user-username{
+  font-weight: bold;
+}
+.user-username > .greeting{
+  font-size: small;
+}
+
+
+.functionality > .buttons{
+  display: flex;
+  align-items: end;
+  gap: 1rem;
+}
+
+.functionality > .buttons > button{
+  border-radius: 20px;
+  height: 2rem;
+  width: 5rem;
+  color: var(--white);
+  font-weight: bold;
+  background-color: var(--primary);
+  border: none;
+}
 
 
 
